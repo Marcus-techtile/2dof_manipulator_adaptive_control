@@ -4,9 +4,10 @@
 
 % Add paths
 current_dir = fileparts(mfilename('fullpath'));
+workspace_root = fileparts(current_dir);  % Get the workspace root directory
 addpath(current_dir);
-addpath(fullfile(current_dir, '..'));
-addpath(fullfile(current_dir, '..', '..', 'video'));
+addpath(fullfile(workspace_root, 'adaptive_rbfnn_controller')); % Add the correct path to RBFNNController
+addpath(fullfile(workspace_root, 'video'));
 addpath(fullfile(current_dir, 'model')); % Add model directory for generate_disturbance
 
 clear all;
