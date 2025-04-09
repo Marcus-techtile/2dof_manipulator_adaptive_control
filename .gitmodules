@@ -1,0 +1,3 @@
+[submodule "adaptive_rbfnn_controller"]
+	path = adaptive_rbfnn_controller
+	url = https://github.com/Marcus-techtile/adaptive_rbfnn_controller.git
